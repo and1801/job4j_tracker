@@ -13,10 +13,15 @@ public class Error {
         this.message = message;
     }
 
+    public Error() {
+
+    }
+
     public static void main(String[] args) {
         Error error = new Error(true, 404, "Ошибка");
         error.printInfo();
     }
+
     public void printInfo() {
         System.out.println(active);
         System.out.println(status);
